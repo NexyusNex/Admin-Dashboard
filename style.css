@@ -23,7 +23,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap:40px;
 }
 
 .logo{
@@ -38,12 +38,17 @@
 
 .sidebar ul{
     list-style: none;
-    margin-left: 10%;
+    margin-left: 16px;
     font-size: 20px;
 }
 
 .sidebar li{
     padding-bottom: 8px;
+}
+
+.sidebar li img{
+    height: 1.5em;
+    vertical-align: middle;
 }
 
 .header{
