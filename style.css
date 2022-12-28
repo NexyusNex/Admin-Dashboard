@@ -21,6 +21,29 @@
     background-color: #6d28d9;
     grid-row-end: span 2;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.sidebar li{
+    padding-bottom: 8px;
 }
 
 .header{
