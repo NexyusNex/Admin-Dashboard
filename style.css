@@ -2,6 +2,11 @@
     margin:0;
     padding:0;
     font-family: roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -29,7 +34,7 @@
 .logo{
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 .logo img{
@@ -53,13 +58,13 @@
 
 .header{
     background-color: #f5f3ff;
-    box-sizing: border-box;
     display: grid;
-    grid-template-columns: minmax(400px,4fr) 3fr;
+    grid-template-columns: minmax(0px,4fr) 3fr;
     grid-template-rows:minmax(0,1fr) minmax(0,1fr);
     box-shadow: 0px 15px 15px -10px #aaaaaa;
     position: relative;
-    padding:8px;
+    padding:0px 16px;
+
 }
 
 .search-bar{
@@ -82,10 +87,10 @@
 
 .notification-bar{
     display: flex;
-    align-items: center;
     justify-content: flex-end;
     gap:25px;
-    padding: 0 5%;
+    align-items: center;
+    padding-right: 5%;
     font-size: 24px;
     font-weight: bold;
 }
@@ -138,11 +143,10 @@
 }
 
 .main-content{
-    box-sizing: border-box;
     background-color: #ddd6fe;
     display: grid;
-    grid-template-columns: minmax(400px,5fr) 2fr;
-    padding:28px 24px 16px 24px;
+    grid-template-columns: minmax(400px,3fr) 250px;
+    padding:0px 24px 16px 24px;
     gap:24px;
 }
 
@@ -162,7 +166,6 @@
 .card{
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     border-left: 10px solid #ffa41d;
     background-color: #f5f3ff;
     height:200px;
@@ -195,20 +198,47 @@
     white-space: pre-wrap;
     height: 100%;
 }
+.projects{
+    padding-top:24px;
+}
 .news{
+    padding-top:24px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(0px,1fr) minmax(0px,1fr);
 }
-.announcements{
-    background-color: #f5f3ff;
-    border-radius: 10px;
-    box-shadow: 0px 15px 10px -10px #aaaaaa;
+.panel{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
 }
-.trending{
+
+.announcements, .trending{
     display: flex;
     background-color: #f5f3ff;
     border-radius: 10px;
     height:100%;
     box-shadow: 0px 15px 10px -10px #aaaaaa;
+}
+
+.announcements{
+    display: grid;
+    grid-template-rows: repeat(auto-fill,1fr);
+}
+
+.article{
+    padding: 24px 24px;
+    font-size: 14px;
+    color:#707070;
+    border-bottom: 1px solid #ddd6fe;
+}
+
+.article:last-child{
+    border-bottom: none;
+}
+
+.article span{
+    display: block;
+    font-size: 16px;
+    color:black;
 }
