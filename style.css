@@ -145,8 +145,8 @@ body{
 .main-content{
     background-color: #ddd6fe;
     display: grid;
-    grid-template-columns: minmax(400px,3fr) 250px;
-    padding:0px 24px 16px 24px;
+    grid-template-columns: minmax(400px,3fr) 300px;
+    padding:0px 32px 16px 24px;
     gap:24px;
 }
 
@@ -241,4 +241,25 @@ body{
     display: block;
     font-size: 16px;
     color:black;
+}
+
+.trending{
+    display:grid;
+    padding: 24px 24px;
+}
+
+.profile{
+    display: flex;
+    align-items:center;
+    gap: 16px;
+    height: 3.5rem;
+}
+
+.profile img{
+    height: 3.5rem;
+    display: inline-block;
+}
+.profile span{
+    display: block;
+    margin:0;
 }
