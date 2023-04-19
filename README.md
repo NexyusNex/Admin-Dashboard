@@ -8,4 +8,3 @@ A site made to learn and experiment with grid layout.
 
 - HTML
 - CSS
-- Javascript
